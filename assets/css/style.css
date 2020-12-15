@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #e7d6cb;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 350px;
+  margin-bottom: 5%;
+  background-color: #fbf1ea;
+}
+
+.image {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.image img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.name p {
+  margin: 4px;
+  margin-bottom: 6px;
+  font-size: 38px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.job {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.job p {
+  padding-top: 12px;
+  margin: 1px;
+  border-top: 1px solid #cfad96;
+  font-size: 18px;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 30px;
+  background-color: #ffffff;
+}
+
+.social a {
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.social a:hover {
+  transition: 100ms;
+  padding-top: 6px;
+  color: #bf9173;
+}
