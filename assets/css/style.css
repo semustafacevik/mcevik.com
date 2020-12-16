@@ -90,3 +90,9 @@ body {
 .kaggle-ico {
   font-size: 28px;
 }
+
+@media only screen and (max-width: 450px) {
+  .box {
+    width: 300px;
+  }
+}
