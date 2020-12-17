@@ -81,14 +81,19 @@ body {
   color: rgba(0, 0, 0, 0.9);
 }
 
+.social .kaggle-icon {
+  font-size: 26px;
+  padding-top: 10px;
+}
+
 .social a:hover {
   transition: 100ms;
   padding-top: 6px;
   color: #bf9173;
 }
 
-.kaggle-ico {
-  font-size: 28px;
+.social .kaggle-icon:hover {
+  padding-top: 7px;
 }
 
 @media only screen and (max-width: 450px) {
