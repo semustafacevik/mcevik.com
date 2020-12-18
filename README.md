@@ -1,2 +1,2 @@
 # Personal Portfolio
-I've designed my portfolio with HTML/CSS.
+I've designed my portfolio with HTML/CSS/JS.
