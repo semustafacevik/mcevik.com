@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="assets/images/rocky.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="assets/images/rocky.ico" type="image/x-icon" />
     <title>Mustafa CEVIK</title>
   </head>
-  
+
   <body>
     <div class="container">
-      <div class="box">
-        <div class="image">
-          <img src="assets/images/semustafacevik.jpg" alt="MustafaCEVIK" />
+      <div class="box" id="main-box">
+        <div class="content">
+          <div class="image">
+            <img src="assets/images/semustafacevik.jpg" alt="MustafaCEVIK" />
+          </div>
+
+          <div class="name">
+            <p>Mustafa ÇEVİK</p>
+          </div>
+
+          <div class="job">
+            <p>Software Engineer</p>
+          </div>
+
+          <div class="info">
+            <p onclick="showBox('about-box')">About</p>
+            <p>Projects</p>
+          </div>
         </div>
 
-        <div class="name">
-          <p>Mustafa ÇEVİK</p>
-        </div>
-
-        <div class="job">
-          <p>Software Engineer</p>
-        </div>
-
-        <div class="info">
-          <p>About</p>
-          <p>Projects</p>
-        </div>
-
-        <div class="social">
+        <div class="footer" id="social">
           <a href="https://www.linkedin.com/in/semustafacevik" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/semustafacevik" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-          <a class="kaggle-icon" href="https://kaggle.com/semustafacevik" target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle"></i></a>
+          <a id="kaggle-icon" href="https://kaggle.com/semustafacevik" target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle"></i></a>
           <a href="https://twitter.com/semustafacevik" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
           <a href="mailto:se.mustafacevik@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
+
+      <div class="box" id="about-box">
+        <div class="content">
+          <div class="title">
+            <p>About</p>
+          </div>
+          <div class="about-desc">
+            <p>Hi,</p>
+            <p>My name is Mustafa, I'm a software engineer.</p>
+            <p>
+              I'm mainly interested in backend technologies. Some of the technologies I've experienced in the past are: C#, .NET Core, Java, Spring
+              Boot, NodeJS, Express, MSSQL, PostgreSQL, MongoDB, Docker...
+            </p>
+            <p>
+              I completed the software engineering undergraduate program as a high honor student. For more information about me, you can visit my
+              <a href="https://www.linkedin.com/in/semustafacevik" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p id="footer-close" onclick="showBox('main-box')">Close</p>
+        </div>
+      </div>
     </div>
   </body>
-
+  <script src="assets/js/main.js"></script>
 </html>

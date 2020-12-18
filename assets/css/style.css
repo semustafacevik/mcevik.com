@@ -4,27 +4,45 @@ body {
   margin: 0;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7d6cb;
+}
+
 * {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-color: #e7d6cb;
+  height: 415px;
+  width: 350px;
+  margin-bottom: 5%;
+  background-color: #fbf1ea;
 }
 
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
-  width: 350px;
-  margin-bottom: 5%;
+  height: 100%;
+  width: 100%;
   background-color: #fbf1ea;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+/* main box */
 
 .image {
   display: flex;
@@ -88,38 +106,94 @@ body {
   border-bottom: 1px solid #a97756;
 }
 
-.social {
+.footer {
   display: flex;
   justify-content: space-evenly;
-  height: auto;
+  flex-shrink: 0;
+  height: 55px;
   width: 100%;
   margin-top: 12px;
-  font-size: 30px;
   background-color: #ffffff;
 }
 
-.social a {
+#social {
+  font-size: 30px;
+}
+
+.footer a {
   padding: 8px;
   color: rgba(0, 0, 0, 0.9);
 }
 
-.social .kaggle-icon {
+#kaggle-icon {
   font-size: 26px;
   padding-top: 10px;
 }
 
-.social a:hover {
+.footer a:hover {
   transition: 100ms;
   padding-top: 6px;
   color: #bf9173;
 }
 
-.social .kaggle-icon:hover {
+#kaggle-icon:hover {
   padding-top: 7px;
 }
 
+/* about box */
+
+.title {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.title p {
+  margin: 10px 4px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.about-desc {
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+.about-desc p {
+  margin: 8px 20px 2px;
+  font-style: italic;
+  text-indent: 12px;
+  text-align: justify;
+}
+
+#footer-close {
+  cursor: pointer;
+}
+
+#footer-close:hover {
+  color: #bf9173;
+  font-weight: 700;
+  border-bottom: 1px solid #a97756;
+}
+
+/* for smaller screens */
+
 @media only screen and (max-width: 450px) {
-  .box {
+  .container {
     width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 265px;
+  }
+
+  .about-desc {
+    height: 300px;
+    overflow: auto;
   }
 }
