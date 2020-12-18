@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -39,15 +43,12 @@ body {
   justify-content: center;
   height: auto;
   width: 100%;
-  margin-bottom: 2%;
 }
 
 .name p {
-  margin: 4px;
-  margin-bottom: 6px;
+  margin: 4px 4px 10px;
   font-size: 38px;
   font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .job {
@@ -58,12 +59,33 @@ body {
 }
 
 .job p {
-  padding-top: 12px;
-  margin: 1px;
+  padding-top: 10px;
+  margin: 2px;
   border-top: 1px solid #cfad96;
   font-size: 18px;
   font-style: italic;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 85%;
+  padding: 2px;
+  margin: 0;
+  font-size: 13px;
+}
+
+.info p {
+  margin: 1px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #cfad96;
+  cursor: pointer;
+}
+
+.info p:hover {
+  font-weight: 600;
+  border-bottom: 1px solid #a97756;
 }
 
 .social {
@@ -71,7 +93,7 @@ body {
   justify-content: space-evenly;
   height: auto;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 12px;
   font-size: 30px;
   background-color: #ffffff;
 }
