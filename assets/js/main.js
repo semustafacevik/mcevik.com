@@ -9,3 +9,4 @@ function showBox(boxClassId) {
 }
 
 document.getElementById("about-box").style.display = "none";
+document.getElementById("projects-box").style.display = "none";
