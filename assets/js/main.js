@@ -5,6 +5,7 @@ function showBox(boxClassId) {
     box.style.display = "none";
   }
 
+  document.getElementById("box-wrap").classList.toggle("is-flipped");
   document.getElementById(boxClassId).style.display = "flex";
 }
 
