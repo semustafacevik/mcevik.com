@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 413px;
+  height: auto;
   width: 350px;
   margin-bottom: 5%;
 }
@@ -55,6 +55,18 @@ body {
   align-items: center;
   width: 100%;
   flex: 1 0 auto;
+}
+
+p a {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #a97756;
+  text-decoration: underline;
+  transition: 200ms;
 }
 
 /* main box */
@@ -185,11 +197,11 @@ body {
   text-align: justify;
 }
 
-#footer-close {
+.footer-close {
   cursor: pointer;
 }
 
-#footer-close:hover {
+.footer-close:hover {
   color: #bf9173;
   font-weight: 700;
   border-bottom: 1px solid #a97756;
@@ -301,7 +313,6 @@ body {
 
 @media only screen and (max-width: 450px) {
   .container {
-    height: auto;
     width: 300px;
   }
 
@@ -312,7 +323,6 @@ body {
 
 @media only screen and (max-width: 320px) {
   .container {
-    height: auto;
     width: 265px;
   }
 
